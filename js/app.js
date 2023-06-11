@@ -4,6 +4,7 @@ console.log("App");
 const titulo = document.getElementById("titulo");
 console.log(titulo);
 
+
 // Obtiene elementos dado el tag
 const lilist = document.getElementsByTagName("li");
 console.log(lilist);
