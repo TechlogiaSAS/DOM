@@ -1,41 +1,18 @@
-function alerta() {
-    alert("Hello");
-}
+const boton = document.getElementById("boton");
+const indicador = document.getElementById("indicador");
 
+const mouseClickHandler =  () => {
+    console.log("Se hizo click");
+};
 
-//Obtiene el elemento HTML
-const tituloJavascript = document.getElementById("tituloJavascript");
+const mouseOverHandler =  () => {
+    console.log("Mouse sobre el boton");
+};
 
-function mostrarFecha(){
-    const fechaActual = new Date();
-    console.log(fechaActual);
-}
+const mouseOutHandler =  () => {
+    console.log("Mouse sale del boton");
+};
 
-
-//Asocia un evento a un elemento
-//NO  SE ESCRIBEN LOS PARENTESIS DE LA FUNCION
-tituloJavascript.onclick = mostrarFecha;
-
-//Obtiene una referencia al elemento
-const tituloFecha = document.getElementById("tituloFecha");
-
-//El elemento nescucha el evento click
-tituloFecha.addEventListener("click", mostrarFecha);
-tituloFecha.addEventListener("click", function(){
-    console.log("Hello 1");
-});
-tituloFecha.addEventListener("click", function(){
-    //Obtiene la fecha actual
-    const fecha = new Date();
-    //Obtiene el dia actual
-    const day = fecha.getDate();
-    //Muestra el dia actual
-    console.log(day)
-
-    //Verifica si el dia actual esta en la primera quincena o en la segunda quincena
-    if( day >= 1 && day <=15) {
-        tituloFecha.classList.add("primera-quincena");
-    } else {
-        tituloFecha.classList.add("segunda-quincena");
-    }
-});
+boton.addEventListener("click", mouseClickHandler);
+boton.addEventListener("mouseover", mouseOverHandler);
+boton.addEventListener("mouseout", mouseOutHandler);

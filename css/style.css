@@ -1,10 +1,4 @@
-.primera-quincena {
-  background: navy;
-  color: white;
+#indicador {
+  width: 200px;
+  height: 200px;
 }
-
-.segunda-quincena {
-  background: green;
-  color: white;
-}
-
