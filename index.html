@@ -8,18 +8,17 @@
     <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <script>
+    function mensaje() {
+      alert("Este es un mensaje desde el H2")
+    }
+  </script>
   <body>
-    <h1 id="titulo">DOM</h1>
-    <a id="link" href="https://chat.openai.com/">ChatGPT</a>
-    <img id="img1" src="img/sun.png" alt="sun" />
-    <img id="img2" src="img/moon.png" alt="moon" />
+    <h1 id="titulo" onclick="alert('Me hicieron click')">DOM</h1>
+    <h2 onclick="mensaje()">Html + Css + Js</h2>
+    <h1 onclick="this.textContent='Medellin'">Bogota</h1>
+    <h1 id="tituloJavascript">Javascript</h1>
+    <h1 id="tituloFecha">Click here to show current date!</h1>
 
-    <ul id="lista">
-      <li>Spiderman</li>
-      <li>Deadpool</li>
-      <li>Eter</li>
-    </ul>
-
-    <button id="boton">Click me</button>
   </body>
 </html>
