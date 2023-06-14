@@ -15,6 +15,7 @@ const src1 = img1.getAttribute("src");
 console.log(src1);
 
 //Modifica el atributo de un elemento
+
 img2.setAttribute("src", src1);
 
 
