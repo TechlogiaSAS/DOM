@@ -2,3 +2,25 @@ img {
   width: 50px;
   height: 50px;
 }
+
+#lista {
+  background-color: red;
+}
+
+.btn {
+  background-color: rgb(0, 95, 139);
+  color: #fff;
+  outline: none;
+  border: 0;
+  border-radius: 7px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(2, 0, 139);
+}
+
+.border {
+  border: 2px solid orangered;
+}
