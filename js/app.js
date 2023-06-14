@@ -28,6 +28,7 @@ lista.style.backgroundColor = "purple";
 
 //Obtiene el boton
 const boton = document.getElementById("boton");
+
 //Agrega la clase CSS al elemento
 boton.classList.add("btn");
 boton.classList.add("border");
