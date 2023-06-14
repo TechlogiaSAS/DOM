@@ -8,6 +8,7 @@ titulo.textContent = "Frontend Avanzado";
 link.href = "https://www.discogs.com/es/release/12790214-Mala-Fama-Ritmo-Sustancia"
 
 const img1 = document.getElementById("img1");
+
 const img2 = document.getElementById("img2");
 
 //Obtiene el valor de un atributo
