@@ -14,4 +14,25 @@ const img2 = document.getElementById("img2");
 const src1 = img1.getAttribute("src");
 console.log(src1);
 
+//Modifica el atributo de un elemento
 img2.setAttribute("src", src1);
+
+
+//Obtiene la lista
+const lista = document.getElementById("lista");
+console.log(lista);
+
+//Cambiar el estilo
+lista.style.color = "orange";
+//Camelcase
+lista.style.backgroundColor = "purple";
+
+//Obtiene el boton
+const boton = document.getElementById("boton");
+
+//Agrega la clase CSS al elemento
+boton.classList.add("btn");
+boton.classList.add("border");
+
+//Elimina una clase CSS del elemento
+boton.classList.remove("btn")
