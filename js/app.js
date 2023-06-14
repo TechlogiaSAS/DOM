@@ -17,6 +17,7 @@ console.log(src1);
 //Modifica el atributo de un elemento
 img2.setAttribute("src", src1);
 
+
 //Obtiene la lista
 const lista = document.getElementById("lista");
 console.log(lista);
