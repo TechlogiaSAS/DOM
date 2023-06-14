@@ -1,31 +1,17 @@
-console.log("App");
-
-// Obtiene elementos dado su id
+//Obtiene el elemento
 const titulo = document.getElementById("titulo");
-console.log(titulo);
+const link = document.getElementById("link");
 
+//Modifica el texto del elemento
+titulo.textContent = "Frontend Avanzado";
 
-// Obtiene elementos dado el tag
-const lilist = document.getElementsByTagName("li");
-console.log(lilist);
+link.href = "https://www.discogs.com/es/release/12790214-Mala-Fama-Ritmo-Sustancia"
 
-// Obtiene elementos dada una clase css
-const msgList = document.getElementsByClassName("mensaje");
-console.log(msgList);
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
 
-//Obtiene varios elementos dado un selector
-const hijos = document.querySelectorAll("ul li");
-console.log(hijos);
+//Obtiene el valor de un atributo
+const src1 = img1.getAttribute("src");
+console.log(src1);
 
-//Obtiene un elemento dado un selector
-const hijos1 = document.querySelector("ul li");
-console.log(hijos1);
-
-const imagen = document.querySelector("img");
-
-if(imagen) {
-    console.log("Imagen encontrada")
-} else {
-    console.log("No hay imagenes")
-}
-
+img2.setAttribute("src", src1);
