@@ -2,3 +2,19 @@
   width: 200px;
   height: 200px;
 }
+
+.over {
+  background-color: greenyellow;
+}
+
+.out {
+  background-color: lightcoral;
+}
+
+.click {
+  background-color: lightskyblue;
+}
+
+#menu {
+  background: blueviolet;
+}
