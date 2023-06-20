@@ -1,17 +1,18 @@
-//Obtiene el elemento
-const titulo = document.getElementById("titulo");
-const link = document.getElementById("link");
+const boton = document.getElementById("boton");
+const indicador = document.getElementById("indicador");
 
-//Modifica el texto del elemento
-titulo.textContent = "Frontend Avanzado";
+const mouseClickHandler =  () => {
+    console.log("Se hizo click");
+};
 
-link.href = "https://www.discogs.com/es/release/12790214-Mala-Fama-Ritmo-Sustancia"
+const mouseOverHandler =  () => {
+    console.log("Mouse sobre el boton");
+};
 
-const img1 = document.getElementById("img1");
-const img2 = document.getElementById("img2");
+const mouseOutHandler =  () => {
+    console.log("Mouse sale del boton");
+};
 
-//Obtiene el valor de un atributo
-const src1 = img1.getAttribute("src");
-console.log(src1);
-
-img2.setAttribute("src", src1);
+boton.addEventListener("click", mouseClickHandler);
+boton.addEventListener("mouseover", mouseOverHandler);
+boton.addEventListener("mouseout", mouseOutHandler);
