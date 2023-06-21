@@ -1,50 +1,33 @@
-console.log("app");
+const section = document.querySelector("section");
 
-const area = document.getElementById("area");
+// Crear un elemento DOM
+const article = document.createElement("article");
+article.textContent = "Nuevo articulo";
 
-//Obtiene todos los hijos del elemento
-const hijos = area.children;
-console.log(hijos);
-
-// Recorre la lista de hijos
-for (const hijo of hijos) {
-    console.log(hijo);
-}
-console.log(`La cantidad de hijos del div es ${hijos.length}`);
-
-// Obtiene el primer hijo
-const primerHijo = area.firstElementChild;
-console.log(primerHijo);
-
-// Obtiene el ultimo hijo
-const ultimoHijo = area.lastElementChild;
-console.log(ultimoHijo);
-
-// Obtiene un hijo dada la posicion
-const algunHijo = hijos[1];
-console.log(algunHijo);
-console.log(area.children[2]);
-
-// Obtiene la referencia de los elementos
-const titulo = document.getElementById("titulo");
-const parrafo = document.getElementById("parrafo");
-
-console.log(titulo);
-console.log(parrafo);
-
-// Obtiene el padre de un elemento
-const padre = titulo.parentElement;
-console.log(padre);
-
-// Obtiene el ultimo hijo del padre
-console.log(padre.lastElementChild);
-
-// Encadenar invocacion de propiedades
-console.log(parrafo.parentElement.lastElementChild);
+// Agrega el nuevo elemento a un elemento existente
+section.appendChild(article);
 
 
-const articulo = document.querySelector("article");
-console.log(articulo);
+const h2 = document.createElement("div");
+h2.textContent = "Soy un h2"
+const h3 = document.createElement("div");
+h3.textContent = "Soy un h3"
 
-const abuelo = articulo.parentElement.parentElement;
-console.log(abuelo);
+// Agregar variops elementos
+section.append(h2, h3);
+
+const titulo1 = document.createElement("div");
+titulo1.textContent = "Soy el titulo1"
+const titulo2 = document.createElement("div");
+titulo2.textContent = "Soy el titulo2"
+
+// Arreglo de elementos
+const titulos = [titulo1, titulo2];
+
+//Desestructuracion de elementos de un arreglo
+section.append(...titulos); 
+
+
+// Eliminar elemento
+const primerH2= document.querySelector("h2");
+primerH2.remove();
