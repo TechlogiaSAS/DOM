@@ -28,8 +28,7 @@ const handlerSpanBorrarClick = (evento) => {
     const spanBorrar = evento.target;
     //console.log(spanBorrar.parentElement);
     spanBorrar.parentElement.remove();
-    refrescar();
-    
+    refrescar(); 
 }
 
 const crearLi = (tarea) => {
